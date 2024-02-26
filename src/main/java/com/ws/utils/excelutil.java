@@ -9,7 +9,7 @@ public class excelutil {
 	
 	// We arere going use this classfor future.
 		// we have to create a methods or constructor for creating the object of that class
-//		we have tp parameterise the path 
+//we have tp parameterise the path 
 		
 		XSSFWorkbook WB;
 		
@@ -51,4 +51,4 @@ public class excelutil {
 
 
 
-}
+
