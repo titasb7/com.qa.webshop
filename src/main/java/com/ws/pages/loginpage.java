@@ -58,7 +58,10 @@ public class loginpage extends Drivermanager {
 	public boolean isForgotpasswordlinkPresent() {
 		return Forgotpasswordlink.isDisplayed();
 	}
-
+	public void clickForgotpasswordlink() {
+		Forgotpasswordlink.click();
+	}
+	
 	public void clickremembermeButton() {
 
 		remembermeButton.click();
