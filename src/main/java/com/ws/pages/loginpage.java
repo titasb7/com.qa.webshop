@@ -20,6 +20,8 @@ public class loginpage extends Drivermanager {
 	WebElement Forgotpasswordlink;
 	@FindBy(xpath = "//label[@for='RememberMe']")
 	WebElement remembermeButton;
+	@FindBy(name="Email")WebElement emeilfieldtext1;
+	@FindBy(name="send-email")WebElement Recoverlink;
 	@FindBy(xpath = "//input[@class ='button-1 login-button']")
 	WebElement loginButton;
 
@@ -61,7 +63,15 @@ public class loginpage extends Drivermanager {
 	public void clickForgotpasswordlink() {
 		Forgotpasswordlink.click();
 	}
+	public void enteremailadderess(String email1) {
+		emeilfieldtext1.click();
+		emeilfieldtext1.clear();
+		emeilfieldtext1.sendKeys(email1);
+	}
 	
+	public void clickRecoverlink() {
+		Recoverlink.click();
+	}
 	public void clickremembermeButton() {
 
 		remembermeButton.click();
